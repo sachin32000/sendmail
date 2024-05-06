@@ -37,7 +37,7 @@ const sendEmail = async (senderEmail, recipientEmails, subject, text) => {
 };
 
 // Improved route to test database connection and fetch data
-app.post('/sendmail', async (req, res) => {
+app.post('/', async (req, res) => {
   try {
     const connection = await pool.getConnection(); // Create a connection
 
